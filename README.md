@@ -50,6 +50,7 @@ If you see static pixels on an edge, adjust these two values by 1–2 at a time 
 
 Convert any video file to the required raw MJPEG format with `ffmpeg`:
 
+Head to the folder where the video file is located and enter cmd in the address bar
 ```bash
 ffmpeg -i input.mp4 -vf "scale=160:128" -r 15 -q:v 5 -pix_fmt yuvj420p -f mjpeg video.mjpeg
 ```
